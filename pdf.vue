@@ -430,7 +430,7 @@ function PDFJSWrapper(PDFJS, canvasElt, annotationLayerElt, emitEvent) {
 	PDFJS.CustomStyle.setProp('transform-origin', annotationLayerElt, '0 0');
 }
 
-module.exports = {
+export default {
 	components: {
 		'resize-sensor': resizeSensor,
 	},
@@ -512,7 +512,5 @@ module.exports = {
 		this.pdf.destroy();
 	}
 }
-
-export default () => { }
 
 </script>
