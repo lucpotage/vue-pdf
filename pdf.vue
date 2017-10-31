@@ -156,6 +156,8 @@
 var PDFJS = require('pdfjs-dist/webpack.js');
 var resizeSensor = require('vue-resize-sensor');
 
+Vue.use(resizeSensor)
+
 function PDFJSWrapper(PDFJS, canvasElt, annotationLayerElt, emitEvent) {
 	
 	var pdfDoc = null;
